@@ -317,75 +317,72 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // 8. Contact Form Submit Simulation
-  const contactForm = document.getElementById('contact-form');
-
-  if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
-      e.preventDefault();
-
-      const userName = document.getElementById('user-name').value;
-      const userEmail = document.getElementById('user-email').value;
-      const userSubject = document.getElementById('user-subject').value;
-      const userTypeSelect = document.getElementById('user-type');
-      const userTypeName = userTypeSelect.options[userTypeSelect.selectedIndex].text;
-
-      // Premium Custom Alert (Simulation)
-      const simulationAlertHtml = `
-        <div style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(5,6,11,0.85); backdrop-filter: blur(10px); z-index: 9999; display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease;" id="custom-alert-box">
-          <div class="glass-card" style="padding: 40px; max-width: 500px; width: 90%; text-align: center; border-color: rgba(157, 78, 221, 0.4); box-shadow: 0 15px 40px rgba(157,78,221,0.25);">
-            <div style="width: 60px; height: 60px; border-radius: 50%; background: rgba(0, 245, 212, 0.1); border: 2px solid var(--secondary); margin: 0 auto 24px auto; display: flex; align-items: center; justify-content: center; color: var(--secondary);">
-              <i data-lucide="check" style="width: 32px; height: 32px;"></i>
-            </div>
-            <h3 style="font-family: 'Noto Sans KR'; font-size: 1.5rem; color: #fff; margin-bottom: 16px;">문의 접수 완료!</h3>
-            <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 30px; text-align: left;">
-              안녕하세요, <strong>${userName}</strong>님. 소중한 문의 메시지가 성공적으로 전송되었습니다.<br><br>
-              • <strong>분류:</strong> ${userTypeName}<br>
-              • <strong>제목:</strong> ${userSubject}<br>
-              • <strong>회신 이메일:</strong> ${userEmail}<br><br>
-              학과 행정처에서 문의 내용을 꼼꼼히 확인한 후, 기재해 주신 회신 주소로 <strong>24시간 이내(주말 제외)</strong>에 친절하고 상세히 답변해 드리겠습니다. 감사합니다.
-            </p>
-            <button class="btn btn-primary" style="width: 100%; justify-content: center;" id="custom-alert-confirm">확인</button>
-          </div>
-        </div>
-      `;
-
-      // Inject custom alert mockup to page body
-      document.body.insertAdjacentHTML('beforeend', simulationAlertHtml);
+  // 8. Premium Custom Tech Cursor Tracking Logic (Modern Fluid Lerp Cursor)
+  const cursor = document.getElementById('custom-cursor');
+  const cursorDot = document.getElementById('custom-cursor-dot');
+  
+  if (cursor && cursorDot && window.innerWidth > 1024) {
+    let mouseX = 0;
+    let mouseY = 0;
+    let ringX = 0;
+    let ringY = 0;
+    
+    // Track target mouse coordinates
+    document.addEventListener('mousemove', (e) => {
+      mouseX = e.clientX;
+      mouseY = e.clientY;
       
-      // Initialize icons in injected HTML
-      lucide.createIcons();
-
-      const alertBox = document.getElementById('custom-alert-box');
-      const alertConfirm = document.getElementById('custom-alert-confirm');
-
-      // Trigger fade in
-      setTimeout(() => {
-        if (alertBox) alertBox.style.opacity = '1';
-      }, 50);
-
-      const dismissAlert = () => {
-        if (alertBox) {
-          alertBox.style.opacity = '0';
-          setTimeout(() => {
-            alertBox.remove();
-          }, 300);
-        }
-        // Reset form
-        contactForm.reset();
-      };
-
-      if (alertConfirm) {
-        alertConfirm.addEventListener('click', dismissAlert);
+      // Update Dot instantly for razor-sharp, zero-delay responsiveness
+      cursorDot.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0) translate3d(-50%, -50%, 0)`;
+    });
+    
+    // Lerp (Linear Interpolation) loop for the outer ring's smooth lag & easing inertia
+    function updateRingCursor() {
+      // 0.15 Lerp factor provides an extremely organic, modern easing effect
+      ringX += (mouseX - ringX) * 0.15;
+      ringY += (mouseY - ringY) * 0.15;
+      
+      cursor.style.transform = `translate3d(${ringX}px, ${ringY}px, 0) translate3d(-50%, -50%, 0)`;
+      
+      requestAnimationFrame(updateRingCursor);
+    }
+    // Initialize loop
+    requestAnimationFrame(updateRingCursor);
+    
+    // High-performance event delegation for hover interaction on all current & dynamic elements
+    document.addEventListener('mouseover', (e) => {
+      const hoverTarget = e.target.closest('a, button, select, input, textarea, .tab-btn, .project-detail-btn, .btn, .logo, [role="button"]');
+      if (hoverTarget) {
+        document.body.classList.add('cursor-hover');
       }
-
-      if (alertBox) {
-        alertBox.addEventListener('click', (ev) => {
-          if (ev.target === alertBox) {
-            dismissAlert();
-          }
-        });
+    });
+    
+    document.addEventListener('mouseout', (e) => {
+      const hoverTarget = e.target.closest('a, button, select, input, textarea, .tab-btn, .project-detail-btn, .btn, .logo, [role="button"]');
+      if (hoverTarget) {
+        document.body.classList.remove('cursor-hover');
       }
+    });
+    
+    // Clicking state visual feedback
+    document.addEventListener('mousedown', () => {
+      document.body.classList.add('cursor-clicking');
+    });
+    
+    document.addEventListener('mouseup', () => {
+      document.body.classList.remove('cursor-clicking');
+    });
+
+    // Handle mouse leaving the window
+    document.addEventListener('mouseleave', () => {
+      cursor.style.opacity = '0';
+      cursorDot.style.opacity = '0';
+      document.body.classList.remove('cursor-hover', 'cursor-clicking');
+    });
+
+    document.addEventListener('mouseenter', () => {
+      cursor.style.opacity = '1';
+      cursorDot.style.opacity = '1';
     });
   }
 });
