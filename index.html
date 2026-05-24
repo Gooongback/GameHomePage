@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="배재대학교 게임공학과 공식 홍보 홈페이지. 미래의 게임 디렉터와 게임 개발자를 양성하는 명문 학과. 커리큘럼, 학생 프로젝트, 취업 정보 및 신입생/재학생 가이드를 확인하세요.">
+  <meta name="keywords" content="게임공학과, 배재대 게임공학과, 게임학과, 게임 개발, 프로그래밍, 유니티, 언리얼, C++, 게임 기획, 대학교 학과 홍보">
+  <meta name="author" content="배재대학교 게임공학과">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://game.pcu.ac.kr/">
+  <meta property="og:title" content="Create the Game, Play the Dream | 배재대학교 게임공학과">
+  <meta property="og:description" content="상상을 현실로 만드는 차세대 게임 개발자들의 요람. 배재대학교 게임공학과에서 당신의 가능성을 플레이하세요!">
+  <meta property="og:image" content="images/og-share.jpg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Create the Game, Play the Dream | 배재대학교 게임공학과">
+  <meta property="twitter:description" content="상상을 현실로 만드는 차세대 게임 개발자들의 요람. 배재대학교 게임공학과에서 당신의 가능성을 플레이하세요!">
+  <meta property="twitter:image" content="images/og-share.jpg">
+
+  <title>배재대학교 게임공학과 | Create the Game, Play the Dream</title>
+
+  <!-- Google Fonts & Lucide Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Outfit:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom Stylesheets -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER / NAVIGATION -->
+  <header id="main-header" class="header">
+    <div class="container header-container">
+      <a href="#hero" class="logo">
+        <span class="logo-accent">배재대</span> 게임공학과
+      </a>
+      <nav class="nav-menu" id="nav-menu">
+        <ul>
+          <li><a href="#about" class="nav-link">학과소개</a></li>
+          <li><a href="#strengths" class="nav-link">강점</a></li>
+          <li><a href="#curriculum" class="nav-link">교육과정</a></li>
+          <li><a href="#projects" class="nav-link">학생프로젝트</a></li>
+          <li><a href="#careers" class="nav-link">진로</a></li>
+        </ul>
+      </nav>
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="메뉴 열기">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1. HERO SECTION -->
+    <section id="hero" class="hero-section">
+      <div class="hero-bg-effect"></div>
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="badge neon-pulse">2026학년도 신입생 및 재학생 가이드</div>
+          <h1 class="hero-title">
+            Create the Game,<br>
+            <span class="gradient-text">Play the Dream.</span>
+          </h1>
+          <p class="hero-subtitle">
+            단순히 게임을 플레이하는 것을 넘어, 전 세계 유저들의 심장을 뛰게 만들 게임을 직접 창조합니다. 최첨단 실무 기술과 융합적인 예술 감각이 결합된 배재대학교 게임공학과에서 여러분의 플레이를 시작하세요.
+          </p>
+          <div class="hero-actions">
+            <a href="#about" class="btn btn-primary" id="btn-freshman">
+              <span>신입생 가이드</span>
+              <i data-lucide="arrow-right"></i>
+            </a>
+            <a href="#curriculum" class="btn btn-outline" id="btn-student">
+              <span>재학생 로드맵</span>
+              <i data-lucide="compass"></i>
+            </a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-img-wrapper glass-card">
+            <img src="images/hero-illustration.png" alt="배재대학교 게임공학과 게임개발 일러스트" class="hero-img">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. ABOUT SECTION (학과소개) -->
+    <section id="about" class="about-section section-padding">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">ABOUT US</span>
+          <h2 class="section-title">상상이 코드가 되고,<br>코드가 세상이 되는 곳</h2>
+          <p class="section-desc">배재대학교 게임공학과는 급변하는 글로벌 게임 환경에 발맞추어, 기술적 전문성과 인문·예술적 창의성을 골고루 갖춘 글로벌 핵심 게임 인재를 양성하는 데 집중합니다.</p>
+        </div>
+        
+        <div class="about-grid">
+          <div class="about-info-card glass-card">
+            <i data-lucide="sparkles" class="card-icon"></i>
+            <h3>융합적 창의성</h3>
+            <p>게임 기획, 그래픽 디자인, 사운드, 그리고 프로그래밍까지 게임 제작 전반의 메커니즘을 총체적으로 학습하여 유기적인 소통 능력을 키웁니다.</p>
+          </div>
+          
+          <div class="about-info-card glass-card">
+            <i data-lucide="code-2" class="card-icon"></i>
+            <h3>실무 프로그래밍</h3>
+            <p>C++, C# 기반의 코딩 기초부터 Unity, Unreal 최신 게임 엔진 실습 및 Direct3D 기반 자체 엔진 제작까지, 현업에서 즉시 투입 가능한 기술을 연마합니다.</p>
+          </div>
+
+          <div class="about-info-card glass-card">
+            <i data-lucide="users-2" class="card-icon"></i>
+            <h3>협업 & 네트워킹</h3>
+            <p>학년 간 경계를 허무는 캡스톤 디자인, 정기 게임잼(Game Jam), 동아리 활동을 통해 완성도 높은 포트폴리오와 팀워크 감각을 확보합니다.</p>
+          </div>
+        </div>
+
+        <div class="faculty-grid">
+          <!-- 학과장 심윤식 교수 -->
+          <div class="faculty-card glass-card">
+            <div class="faculty-header">
+              <div class="faculty-avatar">
+                <i data-lucide="server"></i>
+              </div>
+              <div class="faculty-meta">
+                <span class="faculty-role">학과장 / 교수</span>
+                <h3>심윤식 교수</h3>
+              </div>
+            </div>
+            <div class="faculty-body">
+              <span class="faculty-specialty">게임 서버 & 네트워크</span>
+              <p class="faculty-bio">
+                前 넷마블 시니어 서버 아키텍트<br>
+                포항공대 컴퓨터공학 박사<br>
+                대규모 멀티플레이 분산 서버 아키텍처 연구 주도
+              </p>
+            </div>
+          </div>
+
+          <!-- 김태환 교수 -->
+          <div class="faculty-card glass-card">
+            <div class="faculty-header">
+              <div class="faculty-avatar">
+                <i data-lucide="award"></i>
+              </div>
+              <div class="faculty-meta">
+                <span class="faculty-role">교수</span>
+                <h3>김태환 교수</h3>
+              </div>
+            </div>
+            <div class="faculty-body">
+              <span class="faculty-specialty">게임 엔진 & 프로그래밍</span>
+              <p class="faculty-bio">
+                前 넥슨코리아 신규개발본부 기술 디렉터<br>
+                KAIST 전산학 박사<br>
+                차세대 게임 물리 연산 및 최적화 연구 주도
+              </p>
+            </div>
+          </div>
+          
+          <!-- 이영호 교수 -->
+          <div class="faculty-card glass-card">
+            <div class="faculty-header">
+              <div class="faculty-avatar">
+                <i data-lucide="palette"></i>
+              </div>
+              <div class="faculty-meta">
+                <span class="faculty-role">교수</span>
+                <h3>이영호 교수</h3>
+              </div>
+            </div>
+            <div class="faculty-body">
+              <span class="faculty-specialty">컴퓨터 그래픽스 & 가상현실</span>
+              <p class="faculty-bio">
+                前 엔씨소프트 개발실 3D 기술 디자이너<br>
+                서울대학교 컴퓨터공학 석사<br>
+                VR/AR 몰입형 콘텐츠 인터랙션 기술 연구 주도
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. STRENGTHS SECTION (강점) -->
+    <section id="strengths" class="strengths-section section-padding">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">OUR STRENGTHS</span>
+          <h2 class="section-title">왜 배재대 게임공학과인가?</h2>
+          <p class="section-desc">오직 우리 학과만이 제시할 수 있는 독보적인 경쟁력과 특화된 교육 인프라를 소개합니다.</p>
+        </div>
+
+        <div class="strengths-list">
+          <!-- 강점 1 -->
+          <div class="strength-card glass-card">
+            <div class="strength-img-placeholder">
+              <i data-lucide="monitor" class="placeholder-icon"></i>
+            </div>
+            <div class="strength-content">
+              <span class="strength-num">01</span>
+              <h3>최첨단 실습 인프라 및 연구 공간</h3>
+              <p>RTX 4080 기반 최신형 그래픽 카드를 탑재한 PC 실습실을 24시간 개방하며, VR/AR 테스트 룸, 모션 캡쳐 장비, 콘솔 개발 키트 등 현업 대기업 스튜디오 수준의 하드웨어를 직접 다룰 수 있습니다.</p>
+              <ul class="strength-bullet">
+                <li><i data-lucide="check-circle" class="bullet-icon"></i> 1인 1개발 모니터 및 듀얼 스크린 구축</li>
+                <li><i data-lucide="check-circle" class="bullet-icon"></i> 최신 VR (Meta Quest 3) 디바이스 완비</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- 강점 2 -->
+          <div class="strength-card glass-card reverse">
+            <div class="strength-img-placeholder">
+              <i data-lucide="graduation-cap" class="placeholder-icon"></i>
+            </div>
+            <div class="strength-content">
+              <span class="strength-num">02</span>
+              <h3>현업 메이저 게임 개발자 1:1 멘토링</h3>
+              <p>넥슨, 엔씨소프트, 넷마블, 크래프톤 출신의 전·현직 시니어 개발자들이 강사진으로 참여합니다. 매달 진행되는 1:1 포트폴리오 피드백 및 모의 면접 세션을 통해 취업 전략을 수립합니다.</p>
+              <ul class="strength-bullet">
+                <li><i data-lucide="check-circle" class="bullet-icon"></i> 게임 엔진 및 테크니컬 아트 전문가 밀착 지도</li>
+                <li><i data-lucide="check-circle" class="bullet-icon"></i> 방학 중 기업 매칭 인턴십 프로그램 지원</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- 강점 3 -->
+          <div class="strength-card glass-card">
+            <div class="strength-img-placeholder">
+              <i data-lucide="gamepad-2" class="placeholder-icon"></i>
+            </div>
+            <div class="strength-content">
+              <span class="strength-num">03</span>
+              <h3>실전형 다작 프로젝트 중심의 압도적 개발 경험</h3>
+              <p>이론 위주의 주입식 코딩 교육을 과감히 탈피하여, 입학 첫 학기부터 다양한 규모의 팀 프로젝트 및 정기 게임잼(Game Jam)을 무수히 경험합니다. 졸업 전까지 최소 3개 이상의 완전한 게임 런칭 사이클을 체득하여 즉시 투입 가능한 실전 포트폴리오를 구축합니다.</p>
+              <ul class="strength-bullet">
+                <li><i data-lucide="check-circle" class="bullet-icon"></i> 2D 캐주얼부터 3D 대작까지 풍부한 다작(多作) 프로젝트 환경</li>
+                <li><i data-lucide="check-circle" class="bullet-icon"></i> 학기별 단기 빌드 게임잼을 통한 생생한 릴리즈 역량 트레이닝</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. CURRICULUM SECTION (교육과정) -->
+    <section id="curriculum" class="curriculum-section section-padding">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">CURRICULUM</span>
+          <h2 class="section-title">탄탄하게 구성된 단계별 성장 로드맵</h2>
+          <p class="section-desc">프로그래밍 비전공 신입생부터 실무 프로젝트를 주도할 고년차 재학생까지, 맞춤형 교육 트랙을 제공합니다.</p>
+        </div>
+
+        <!-- 트랙 토글 탭 -->
+        <div class="curriculum-tabs">
+          <button class="tab-btn active" data-track="program">
+            <i data-lucide="code-2"></i>
+            <span>게임 프로그래밍 트랙</span>
+          </button>
+          <button class="tab-btn" data-track="design">
+            <i data-lucide="gamepad-2"></i>
+            <span>게임 기획 & 그래픽 트랙</span>
+          </button>
+        </div>
+
+        <!-- 커리큘럼 타임라인 그리드 (JS로 스위칭 가능) -->
+        <div class="curriculum-timeline" id="curriculum-timeline">
+          <!-- 1학년 -->
+          <div class="timeline-card glass-card" data-year="1">
+            <div class="year-badge">1학년</div>
+            <h4>개발의 첫걸음 및 기초 기초 체력 배양</h4>
+            <p class="year-desc">게임 개발자로서 갖추어야 할 논리적 사고와 가장 뼈대가 되는 프로그래밍 핵심 기초 지식을 단단하게 구축합니다.</p>
+            <ul class="curriculum-list">
+              <li>C / C++ 프로그래밍 기초</li>
+              <li>파이썬을 활용한 문제 해결</li>
+              <li>게임학개론 및 시장 트렌드</li>
+              <li>이산수학 및 선형대수학 기초</li>
+            </ul>
+          </div>
+
+          <!-- 2학년 -->
+          <div class="timeline-card glass-card" data-year="2">
+            <div class="year-badge">2학년</div>
+            <h4>게임 엔진 및 컴퓨터 그래픽스 심화</h4>
+            <p class="year-desc">Unity/Unreal 엔진을 본격적으로 체득하며 컴퓨터 내부에서 화면이 렌더링되는 기술적 메커니즘을 상세히 이해합니다.</p>
+            <ul class="curriculum-list">
+              <li>자료구조 및 알고리즘</li>
+              <li>Unity 2D/3D 게임 제작 실습</li>
+              <li>C# 기반 객체지향 윈도우 프로그래밍</li>
+              <li>컴퓨터 그래픽스 및 수학</li>
+            </ul>
+          </div>
+
+          <!-- 3학년 -->
+          <div class="timeline-card glass-card" data-year="3">
+            <div class="year-badge">3학년</div>
+            <h4>네트워크 게임 서버 및 멀티 플레이어 설계</h4>
+            <p class="year-desc">동시 접속 수만 명을 견딜 수 있는 튼튼한 게임 서버 구축을 배우고, 학과 내 대규모 팀 프로젝트를 시작합니다.</p>
+            <ul class="curriculum-list">
+              <li>윈도우 소켓 네트워크 프로그래밍</li>
+              <li>Unreal Engine C++ 심화</li>
+              <li>게임 데이터베이스 및 SQL</li>
+              <li>중기 팀 프로젝트 (Game Jam 연동)</li>
+            </ul>
+          </div>
+
+          <!-- 4학년 -->
+          <div class="timeline-card glass-card" data-year="4">
+            <div class="year-badge">4학년</div>
+            <h4>캡스톤 디자인 및 글로벌 포트폴리오 완성</h4>
+            <p class="year-desc">졸업 후 메이저 게임사와 인디 씬에 곧장 데뷔할 수 있도록 상용화 수준의 마일스톤 빌드를 제작하고 포트폴리오를 다듬습니다.</p>
+            <ul class="curriculum-list">
+              <li>캡스톤 디자인 (1년 장기 프로젝트)</li>
+              <li>게임 물리 엔진 활용 및 최적화</li>
+              <li>취업 포트폴리오 및 면접 클리닉</li>
+              <li>장기 학업 연계 인턴십 (기업 매칭)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. STUDENT PROJECTS SECTION (학생프로젝트) -->
+    <section id="projects" class="projects-section section-padding">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">STUDENT WORK</span>
+          <h2 class="section-title">학생들의 열정이 만들어낸 명작 라인업</h2>
+          <p class="section-desc">재학생들이 직접 기획, 개발, 아트 리소스 작업까지 완성하여 스팀 및 모바일 스토어에 출시한 우수작들입니다.</p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- 프로젝트 1 -->
+          <div class="project-card glass-card">
+            <div class="project-media-placeholder p-aetheria">
+              <span class="badge project-tag">Unreal 5 | PC RPG</span>
+            </div>
+            <div class="project-content">
+              <h3>Aetheria: 에테리아의 바람</h3>
+              <p>초고사양 카툰 렌더링 기술이 가미된 3D 액션 RPG. 박진감 넘치는 실시간 액션 동기화와 깊이 있는 스토리를 담아 2025 졸업 전시 대상을 수상했습니다.</p>
+              <div class="project-footer">
+                <span class="developer-info">개발 인원: 6명 (기획1, 개발3, 아트2)</span>
+                <button class="btn btn-icon-only project-detail-btn" data-project="aetheria" aria-label="프로젝트 자세히 보기">
+                  <i data-lucide="plus"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 프로젝트 2 -->
+          <div class="project-card glass-card">
+            <div class="project-media-placeholder p-neonrun">
+              <span class="badge project-tag">Unity | Mobile 2D</span>
+            </div>
+            <div class="project-content">
+              <h3>Neon Run: 사이버 러너</h3>
+              <p>감각적인 네온 그래픽과 신나는 일렉트로닉 사운드가 어우러진 러닝 게임. Google Play 스토어 및 Apple App 스토어 출시를 완료하여 3만 다운로드를 돌파했습니다.</p>
+              <div class="project-footer">
+                <span class="developer-info">개발 인원: 4명 (기획1, 개발2, 아트1)</span>
+                <button class="btn btn-icon-only project-detail-btn" data-project="neonrun" aria-label="프로젝트 자세히 보기">
+                  <i data-lucide="plus"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 프로젝트 3 -->
+          <div class="project-card glass-card">
+            <div class="project-media-placeholder p-shadowescape">
+              <span class="badge project-tag">Unity | VR Puzzle</span>
+            </div>
+            <div class="project-content">
+              <h3>Shadow Escape: 그림자 탈출</h3>
+              <p>Meta Quest 3 컨트롤러와 핸드 트래킹을 극대화한 가상현실 미스터리 탈출 게임. 기발한 공간감 넘치는 물리 퍼즐을 구현하여 학과 게임잼에서 최우수상을 기록했습니다.</p>
+              <div class="project-footer">
+                <span class="developer-info">개발 인원: 3명 (기획1, 개발2)</span>
+                <button class="btn btn-icon-only project-detail-btn" data-project="shadowescape" aria-label="프로젝트 자세히 보기">
+                  <i data-lucide="plus"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 졸업작품 공식 아카이브 연동 배너 -->
+        <div class="projects-archive-banner glass-card">
+          <div class="archive-banner-content">
+            <div class="archive-icon-wrapper">
+              <i data-lucide="trophy" class="archive-icon"></i>
+            </div>
+            <div class="archive-text">
+              <h3>배재대학교 게임공학과 졸업작품 온라인 전시관</h3>
+              <p>배재대학교 게임공학과 학생들이 피땀 흘려 창조해 낸 독창적이고 재미있는 수많은 게임 포트폴리오를 온라인 아카이브 전시관에서 감상하고 직접 플레이해 보세요!</p>
+            </div>
+          </div>
+          <a href="https://pcugame.github.io/" target="_blank" rel="noopener noreferrer" class="btn btn-primary archive-link-btn">
+            <span>공식 아카이브 전시관 방문</span>
+            <i data-lucide="arrow-up-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. CAREERS SECTION (진로 및 취업) -->
+    <section id="careers" class="careers-section section-padding">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">CAREERS & PATHWAYS</span>
+          <h2 class="section-title">글로벌 무대에서 활약하는 동문 파워</h2>
+          <p class="section-desc">우리 학과를 졸업한 학생들은 국내 유수 대기업은 물론 글로벌 게임 스튜디오의 핵심 요직에서 게임 산업의 트렌드를 이끌어가고 있습니다.</p>
+        </div>
+
+        <div class="careers-grid">
+          <!-- 진출 분야 카드 -->
+          <div class="careers-field-card glass-card">
+            <div class="field-title-wrapper">
+              <i data-lucide="terminal" class="field-icon"></i>
+              <h3>주요 진출 분야</h3>
+            </div>
+            <ul class="careers-field-list">
+              <li>
+                <strong>Game Client Developer</strong>
+                <span>DirectX/OpenGL 기반의 엔진 튜닝 및 콘텐츠 개발 전문가</span>
+              </li>
+              <li>
+                <strong>Game Server Developer</strong>
+                <span>C++ / C# 기반 분산 서버 인프라 및 대용량 DB 설계 전문가</span>
+              </li>
+              <li>
+                <strong>Technical Artist (TA)</strong>
+                <span>프로그래밍 능력과 그래픽적 안목을 융합하여 셰이더 및 파이프라인 최적화</span>
+              </li>
+              <li>
+                <strong>Game Producer / Planner</strong>
+                <span>게임 시스템 기획, 레벨 디자인, 밸런스 데이터 수립가</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- 동문 선배 인터뷰 -->
+          <div class="careers-interview-card glass-card">
+            <div class="interview-header">
+              <div class="interview-profile">
+                <div class="profile-placeholder"></div>
+                <div class="profile-meta">
+                  <span class="name">김태호 동문 (19학번)</span>
+                  <span class="company">현 넥슨(NEXON) 라이브본부 서버 개발자</span>
+                </div>
+              </div>
+              <span class="quote-sign">“</span>
+            </div>
+            <p class="interview-text">
+              "재학 중 경험한 3학년 대규모 멀티플레이어 네트워크 프로젝트가 실전 면접에서 정말 핵심적인 역할을 했습니다. 면접관 분들이 학부생 수준에서 Windows IOCP 네트워크 프레임워크를 직접 다뤄보고 분산 구조와 패킷 최적화를 깊게 고민했다는 점에 매우 놀라워하셨어요. 여러분도 망설이지 말고 학과의 커리큘럼을 믿고 깊이 있게 파고드세요. 배재대학교 게임공학과에서는 꿈이 현실이 될 것입니다!"
+            </p>
+          </div>
+        </div>
+
+        <!-- 협력 업체 로고 배너 (Mockup) -->
+        <div class="company-logos-banner">
+          <span class="banner-title">주요 동문 취업처 및 산학협력 기업</span>
+          <div class="logos-track">
+            <span class="logo-item">NEXON</span>
+            <span class="logo-item">NC SOFT</span>
+            <span class="logo-item">NETMARBLE</span>
+            <span class="logo-item">KRAFTON</span>
+            <span class="logo-item">NEOWIZ</span>
+            <span class="logo-item">PEARLABYSS</span>
+            <span class="logo-item">SMILEGATE</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="logo-accent">배재대</span> 게임공학과
+          <p class="footer-slogan">Create the Game, Play the Dream</p>
+        </div>
+        <div class="footer-socials">
+          <a href="#" aria-label="YouTube"><i data-lucide="youtube"></i></a>
+          <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+          <a href="#" aria-label="GitHub"><i data-lucide="github"></i></a>
+        </div>
+      </div>
+      
+      <div class="footer-divider"></div>
+      
+      <div class="footer-bottom">
+        <p class="copyright">&copy; 2026 배재대학교 게임공학과. All rights reserved.</p>
+        <div class="footer-policy-links">
+          <a href="#">개인정보처리방침</a>
+          <a href="#">이용약관</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- STUDENT WORK DETAILS MODAL (MOCKUP POPUP) -->
+  <div class="modal" id="project-modal" aria-hidden="true" role="dialog">
+    <div class="modal-overlay" id="modal-overlay"></div>
+    <div class="modal-content glass-card">
+      <button class="modal-close" id="modal-close" aria-label="닫기">
+        <i data-lucide="x"></i>
+      </button>
+      <div class="modal-body" id="modal-body-content">
+        <!-- JS로 동적 콘텐츠 주입 예정 -->
+      </div>
+    </div>
+  </div>
+
+
+  <!-- CUSTOM CURSOR -->
+  <div class="custom-cursor" id="custom-cursor"></div>
+  <div class="custom-cursor-dot" id="custom-cursor-dot"></div>
+
+  <!-- Custom Scripts -->
+  <script src="main.js"></script>
+</body>
+</html>
